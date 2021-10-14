@@ -7,11 +7,12 @@
 git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/kafka.git
 git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/common.git
 git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/rest-util.git
+ls -l 
 git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/schema-registry.git
 
 pushd kafka
 ./gradlew jar
-#./gradlewAll publishToMavenLocal
+./gradlewAll publishToMavenLocal
 popd
 
 
