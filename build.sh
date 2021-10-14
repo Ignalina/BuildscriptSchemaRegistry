@@ -17,17 +17,17 @@ git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/schema-regis
 cd kafka
 ./gradlew jar
 ./gradlewAll publishToMavenLocal
-cd..
+cd ..
 
 cd common
 mvn clean install  -Dmaven.test.skip=true 
-cd..
+cd ..
 
 cd rest-utils
 mvn clean install  -Dmaven.test.skip=true 
-cd..
+cd ..
 
 cd schema-registry
 mvn clean install  -Dmaven.test.skip=true 
-cd..
+cd ..
 
