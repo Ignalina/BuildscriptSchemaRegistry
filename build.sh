@@ -31,3 +31,5 @@ cd schema-registry
 mvn clean install  -Dmaven.test.skip=true 
 cd ..
 
+tar -zcf schema-registry.tar.gz schema-registry
+jfrog rt cp schema-registry.tar.gz ignalina/miscc
