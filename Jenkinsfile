@@ -7,6 +7,10 @@ pipeline {
 #
 #
 # Dependencies: bash , mvn
+rm -rf kafka
+rm -rf rest-ytil
+rm -rf common
+rm -rf schema-registry
 
 git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/kafka.git
 git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/common.git
