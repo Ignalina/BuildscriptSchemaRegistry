@@ -16,7 +16,7 @@ git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/schema-regis
 
 cd kafka
 ./gradlew jar
-./gradlewAll publishToMavenLocal
+./gradlewAll install
 cd ..
 
 cd common
