@@ -10,6 +10,8 @@ git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/rest-util.gi
 git clone -b 6.2.1-post  --depth 1  https://github.com/confluentinc/schema-registry.git
 
 pushd kafka
+./gradlew jar
+./gradlewAll publishToMavenLocal
 popd
 
 
